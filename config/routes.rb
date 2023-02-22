@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:new, :create, :show, :edit, :update]
   resources :sessions, olny: [:new, :create, :destroy]
+  resources :favorites, only: [:index, :create, :destroy]
 end
